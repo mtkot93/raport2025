@@ -1,0 +1,820 @@
+{
+  "metadata": {
+    "indicator_id": "departure_wait",
+    "name": "Najmniej czekania",
+    "description": "Średni czas czekania na odjazd środków transportu publicznego",
+    "unit": "minuty",
+    "sort_direction": "asc",
+    "explanation": "Im krótszy czas czekania na odjazd, tym lepszy wskaźnik. Mierzy jak długo trzeba czekać na przystanku od momentu przyjścia do odjazdu kolejnego środka transportu.",
+    "methodology": "Analiza czasów czekania na odjazd (departure_wait_time_minutes) w dni robocze w godzinach 6:00-22:00, z wykluczeniem wartości odstających metodą MAD",
+    "data_coverage": {
+      "total_regions": 36,
+      "has_complete_data": true,
+      "special_notes": "Wszystkie regiony mają kompletne dane"
+    }
+  },
+  "columns": {
+    "primary_metric": {
+      "key": "mean",
+      "name": "Średni czas czekania",
+      "unit": "min",
+      "format": "decimal",
+      "precision": 2
+    },
+    "secondary_metrics": [
+      {
+        "key": "median",
+        "name": "Mediana",
+        "unit": "min",
+        "format": "decimal",
+        "precision": 1
+      },
+      {
+        "key": "n_samples",
+        "name": "Liczba próbek",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      },
+      {
+        "key": "mean_no_outliers_mad",
+        "name": "Średnia bez outlierów",
+        "unit": "min",
+        "format": "decimal",
+        "precision": 2
+      }
+    ],
+    "ranking": {
+      "key": "rank",
+      "name": "Pozycja",
+      "generated": true
+    }
+  },
+  "data": [
+    {
+      "rank": 1,
+      "region_code": "WROCLAW",
+      "city_name": "Wrocław",
+      "population": 672929,
+      "primary_value": 6.37,
+      "metrics": {
+        "mean": 6.37,
+        "median": 4.0,
+        "n_samples": 37961,
+        "std": 10.84,
+        "mean_no_outliers_mad": 5.13
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 8.0,
+        "p90": 13.0,
+        "p95": 18.0
+      }
+    },
+    {
+      "rank": 2,
+      "region_code": "KRAKOW",
+      "city_name": "Kraków",
+      "population": 779966,
+      "primary_value": 6.67,
+      "metrics": {
+        "mean": 6.67,
+        "median": 4.0,
+        "n_samples": 41027,
+        "std": 10.49,
+        "mean_no_outliers_mad": 5.10
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 1.0,
+        "p75": 9.0,
+        "p90": 14.0,
+        "p95": 20.0
+      }
+    },
+    {
+      "rank": 3,
+      "region_code": "SZCZECIN",
+      "city_name": "Szczecin",
+      "population": 399515,
+      "primary_value": 7.06,
+      "metrics": {
+        "mean": 7.06,
+        "median": 5.0,
+        "n_samples": 5423,
+        "std": 7.85,
+        "mean_no_outliers_mad": 6.23
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "p90": 15.0,
+        "p95": 20.0
+      }
+    },
+    {
+      "rank": 4,
+      "region_code": "WARSZAWA",
+      "city_name": "Warszawa",
+      "population": 1790658,
+      "primary_value": 7.59,
+      "metrics": {
+        "mean": 7.59,
+        "median": 5.0,
+        "n_samples": 59312,
+        "std": 13.63,
+        "mean_no_outliers_mad": 5.43
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 9.0,
+        "p90": 15.0,
+        "p95": 22.0
+      }
+    },
+    {
+      "rank": 5,
+      "region_code": "POZNAN",
+      "city_name": "Poznań",
+      "population": 546859,
+      "primary_value": 7.59,
+      "metrics": {
+        "mean": 7.59,
+        "median": 5.0,
+        "n_samples": 28878,
+        "std": 10.23,
+        "mean_no_outliers_mad": 5.90
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "p90": 17.0,
+        "p95": 25.0
+      }
+    },
+    {
+      "rank": 6,
+      "region_code": "ELBLAG",
+      "city_name": "Elbląg",
+      "population": 119317,
+      "primary_value": 7.59,
+      "metrics": {
+        "mean": 7.59,
+        "median": 7.0,
+        "n_samples": 61,
+        "std": 5.96,
+        "mean_no_outliers_mad": 6.86
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 10.0,
+        "p90": 13.0,
+        "p95": 17.0
+      }
+    },
+    {
+      "rank": 7,
+      "region_code": "TROJMIASTO",
+      "city_name": "Trójmiasto",
+      "population": 748348,
+      "primary_value": 7.86,
+      "metrics": {
+        "mean": 7.86,
+        "median": 5.0,
+        "n_samples": 20338,
+        "std": 14.16,
+        "mean_no_outliers_mad": 6.43
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "p90": 17.0,
+        "p95": 23.0
+      }
+    },
+    {
+      "rank": 8,
+      "region_code": "LODZ",
+      "city_name": "Łódź",
+      "population": 679941,
+      "primary_value": 7.98,
+      "metrics": {
+        "mean": 7.98,
+        "median": 6.0,
+        "n_samples": 5923,
+        "std": 10.32,
+        "mean_no_outliers_mad": 6.63
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "p90": 16.0,
+        "p95": 22.0
+      }
+    },
+    {
+      "rank": 9,
+      "region_code": "OLSZTYN",
+      "city_name": "Olsztyn",
+      "population": 171249,
+      "primary_value": 8.21,
+      "metrics": {
+        "mean": 8.21,
+        "median": 6.0,
+        "n_samples": 2656,
+        "std": 12.31,
+        "mean_no_outliers_mad": 6.43
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "p90": 17.0,
+        "p95": 24.0
+      }
+    },
+    {
+      "rank": 10,
+      "region_code": "BYDGOSZCZ",
+      "city_name": "Bydgoszcz",
+      "population": 342688,
+      "primary_value": 8.22,
+      "metrics": {
+        "mean": 8.22,
+        "median": 5.0,
+        "n_samples": 7171,
+        "std": 12.71,
+        "mean_no_outliers_mad": 6.40
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "p90": 17.0,
+        "p95": 23.0
+      }
+    },
+    {
+      "rank": 11,
+      "region_code": "LUBLIN",
+      "city_name": "Lublin",
+      "population": 338586,
+      "primary_value": 8.42,
+      "metrics": {
+        "mean": 8.42,
+        "median": 6.0,
+        "n_samples": 8368,
+        "std": 12.70,
+        "mean_no_outliers_mad": 6.88
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 11.0,
+        "p90": 17.0,
+        "p95": 23.0
+      }
+    },
+    {
+      "rank": 12,
+      "region_code": "GRUDZIADZ",
+      "city_name": "Grudziądz",
+      "population": 92681,
+      "primary_value": 8.85,
+      "metrics": {
+        "mean": 8.85,
+        "median": 6.0,
+        "n_samples": 302,
+        "std": 9.49,
+        "mean_no_outliers_mad": 7.73
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 13.0,
+        "p90": 19.9,
+        "p95": 25.0
+      }
+    },
+    {
+      "rank": 13,
+      "region_code": "CZESTOCHOWA",
+      "city_name": "Częstochowa",
+      "population": 217530,
+      "primary_value": 8.99,
+      "metrics": {
+        "mean": 8.99,
+        "median": 6.0,
+        "n_samples": 992,
+        "std": 9.17,
+        "mean_no_outliers_mad": 7.68
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 13.0,
+        "p90": 20.0,
+        "p95": 25.0
+      }
+    },
+    {
+      "rank": 14,
+      "region_code": "GORZOW",
+      "city_name": "Gorzów Wielkopolski",
+      "population": 123762,
+      "primary_value": 9.40,
+      "metrics": {
+        "mean": 9.40,
+        "median": 6.0,
+        "n_samples": 1304,
+        "std": 12.11,
+        "mean_no_outliers_mad": 6.83
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 12.0,
+        "p90": 21.0,
+        "p95": 32.0
+      }
+    },
+    {
+      "rank": 15,
+      "region_code": "GOP",
+      "city_name": "Górnośląski Okręg Przemysłowy",
+      "population": 2800000,
+      "primary_value": 9.52,
+      "metrics": {
+        "mean": 9.52,
+        "median": 6.0,
+        "n_samples": 13631,
+        "std": 11.47,
+        "mean_no_outliers_mad": 7.89
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 13.0,
+        "p90": 22.0,
+        "p95": 29.0
+      }
+    },
+    {
+      "rank": 16,
+      "region_code": "TORUN",
+      "city_name": "Toruń",
+      "population": 201447,
+      "primary_value": 9.60,
+      "metrics": {
+        "mean": 9.60,
+        "median": 6.0,
+        "n_samples": 4249,
+        "std": 14.16,
+        "mean_no_outliers_mad": 7.21
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 12.0,
+        "p90": 20.0,
+        "p95": 27.0
+      }
+    },
+    {
+      "rank": 17,
+      "region_code": "PILA",
+      "city_name": "Piła",
+      "population": 73497,
+      "primary_value": 9.98,
+      "metrics": {
+        "mean": 9.98,
+        "median": 7.0,
+        "n_samples": 137,
+        "std": 13.44,
+        "mean_no_outliers_mad": 8.08
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 12.0,
+        "p90": 19.4,
+        "p95": 25.2
+      }
+    },
+    {
+      "rank": 18,
+      "region_code": "OPOLE",
+      "city_name": "Opole",
+      "population": 127387,
+      "primary_value": 10.10,
+      "metrics": {
+        "mean": 10.10,
+        "median": 7.0,
+        "n_samples": 839,
+        "std": 13.52,
+        "mean_no_outliers_mad": 8.30
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 2.0,
+        "p75": 13.0,
+        "p90": 22.0,
+        "p95": 29.0
+      }
+    },
+    {
+      "rank": 19,
+      "region_code": "ZIELONA_GORA",
+      "city_name": "Zielona Góra",
+      "population": 140892,
+      "primary_value": 10.19,
+      "metrics": {
+        "mean": 10.19,
+        "median": 7.0,
+        "n_samples": 2903,
+        "std": 13.12,
+        "mean_no_outliers_mad": 7.90
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 13.0,
+        "p90": 23.0,
+        "p95": 33.0
+      }
+    },
+    {
+      "rank": 20,
+      "region_code": "SLUPSK",
+      "city_name": "Słupsk",
+      "population": 90747,
+      "primary_value": 10.19,
+      "metrics": {
+        "mean": 10.19,
+        "median": 6.0,
+        "n_samples": 522,
+        "std": 21.37,
+        "mean_no_outliers_mad": 6.58
+      },
+      "percentiles": {
+        "p10": 0.0,
+        "p25": 2.0,
+        "p75": 11.0,
+        "p90": 19.0,
+        "p95": 28.95
+      }
+    },
+    {
+      "rank": 21,
+      "region_code": "RZESZOW",
+      "city_name": "Rzeszów",
+      "population": 196821,
+      "primary_value": 10.29,
+      "metrics": {
+        "mean": 10.29,
+        "median": 7.0,
+        "n_samples": 2599,
+        "std": 12.63,
+        "mean_no_outliers_mad": 8.51
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 13.0,
+        "p90": 22.0,
+        "p95": 28.1
+      }
+    },
+    {
+      "rank": 22,
+      "region_code": "BIALYSTOK",
+      "city_name": "Białystok",
+      "population": 297554,
+      "primary_value": 10.31,
+      "metrics": {
+        "mean": 10.31,
+        "median": 7.0,
+        "n_samples": 2510,
+        "std": 20.29,
+        "mean_no_outliers_mad": 8.26
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 13.0,
+        "p90": 20.0,
+        "p95": 27.0
+      }
+    },
+    {
+      "rank": 23,
+      "region_code": "RADOM",
+      "city_name": "Radom",
+      "population": 210863,
+      "primary_value": 10.40,
+      "metrics": {
+        "mean": 10.40,
+        "median": 7.0,
+        "n_samples": 1199,
+        "std": 16.18,
+        "mean_no_outliers_mad": 7.93
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 13.0,
+        "p90": 21.0,
+        "p95": 31.0
+      }
+    },
+    {
+      "rank": 24,
+      "region_code": "TARNOW",
+      "city_name": "Tarnów",
+      "population": 107927,
+      "primary_value": 11.03,
+      "metrics": {
+        "mean": 11.03,
+        "median": 7.0,
+        "n_samples": 202,
+        "std": 15.38,
+        "mean_no_outliers_mad": 7.99
+      },
+      "percentiles": {
+        "p10": 0.1,
+        "p25": 3.0,
+        "p75": 13.0,
+        "p90": 22.9,
+        "p95": 34.95
+      }
+    },
+    {
+      "rank": 25,
+      "region_code": "GNIEZNO",
+      "city_name": "Gniezno",
+      "population": 67156,
+      "primary_value": 11.92,
+      "metrics": {
+        "mean": 11.92,
+        "median": 9.0,
+        "n_samples": 168,
+        "std": 11.54,
+        "mean_no_outliers_mad": 10.56
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 17.0,
+        "p90": 24.2,
+        "p95": 34.0
+      }
+    },
+    {
+      "rank": 26,
+      "region_code": "INOWROCLAW",
+      "city_name": "Inowrocław",
+      "population": 73282,
+      "primary_value": 12.51,
+      "metrics": {
+        "mean": 12.51,
+        "median": 7.0,
+        "n_samples": 116,
+        "std": 20.77,
+        "mean_no_outliers_mad": 7.91
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.75,
+        "p75": 12.0,
+        "p90": 26.0,
+        "p95": 32.5
+      }
+    },
+    {
+      "rank": 27,
+      "region_code": "KIELCE",
+      "city_name": "Kielce",
+      "population": 196844,
+      "primary_value": 13.36,
+      "metrics": {
+        "mean": 13.36,
+        "median": 8.0,
+        "n_samples": 1713,
+        "std": 21.45,
+        "mean_no_outliers_mad": 8.38
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 14.0,
+        "p90": 29.0,
+        "p95": 51.0
+      }
+    },
+    {
+      "rank": 28,
+      "region_code": "JELENIA_GORA",
+      "city_name": "Jelenia Góra",
+      "population": 78335,
+      "primary_value": 13.36,
+      "metrics": {
+        "mean": 13.36,
+        "median": 7.0,
+        "n_samples": 1031,
+        "std": 20.47,
+        "mean_no_outliers_mad": 8.62
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 3.0,
+        "p75": 15.0,
+        "p90": 29.0,
+        "p95": 48.0
+      }
+    },
+    {
+      "rank": 29,
+      "region_code": "NOWY_SACZ",
+      "city_name": "Nowy Sącz",
+      "population": 83116,
+      "primary_value": 16.44,
+      "metrics": {
+        "mean": 16.44,
+        "median": 10.0,
+        "n_samples": 505,
+        "std": 21.31,
+        "mean_no_outliers_mad": 11.34
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 21.0,
+        "p90": 40.0,
+        "p95": 61.0
+      }
+    },
+    {
+      "rank": 30,
+      "region_code": "RYBNIK",
+      "city_name": "Rybnik",
+      "population": 137128,
+      "primary_value": 16.50,
+      "metrics": {
+        "mean": 16.50,
+        "median": 11.0,
+        "n_samples": 450,
+        "std": 18.21,
+        "mean_no_outliers_mad": 13.52
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 22.0,
+        "p90": 39.0,
+        "p95": 50.2
+      }
+    },
+    {
+      "rank": 31,
+      "region_code": "KOLOBRZEG",
+      "city_name": "Kołobrzeg",
+      "population": 46830,
+      "primary_value": 17.98,
+      "metrics": {
+        "mean": 17.98,
+        "median": 14.0,
+        "n_samples": 116,
+        "std": 19.93,
+        "mean_no_outliers_mad": 14.91
+      },
+      "percentiles": {
+        "p10": 2.5,
+        "p25": 5.75,
+        "p75": 21.0,
+        "p90": 36.0,
+        "p95": 51.75
+      }
+    },
+    {
+      "rank": 32,
+      "region_code": "OSTROW",
+      "city_name": "Ostrów Wielkopolski",
+      "population": 71130,
+      "primary_value": 18.52,
+      "metrics": {
+        "mean": 18.52,
+        "median": 13.0,
+        "n_samples": 90,
+        "std": 17.66,
+        "mean_no_outliers_mad": 17.38
+      },
+      "percentiles": {
+        "p10": 2.0,
+        "p25": 6.0,
+        "p75": 26.0,
+        "p90": 40.0,
+        "p95": 49.0
+      }
+    },
+    {
+      "rank": 33,
+      "region_code": "KONIN",
+      "city_name": "Konin",
+      "population": 72218,
+      "primary_value": 19.11,
+      "metrics": {
+        "mean": 19.11,
+        "median": 10.0,
+        "n_samples": 622,
+        "std": 39.83,
+        "mean_no_outliers_mad": 11.51
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 20.0,
+        "p90": 38.9,
+        "p95": 57.95
+      }
+    },
+    {
+      "rank": 34,
+      "region_code": "STARGARD",
+      "city_name": "Stargard",
+      "population": 68040,
+      "primary_value": 20.48,
+      "metrics": {
+        "mean": 20.48,
+        "median": 9.5,
+        "n_samples": 120,
+        "std": 32.89,
+        "mean_no_outliers_mad": 11.37
+      },
+      "percentiles": {
+        "p10": 1.0,
+        "p25": 4.0,
+        "p75": 23.0,
+        "p90": 40.6,
+        "p95": 81.35
+      }
+    },
+    {
+      "rank": 35,
+      "region_code": "LESZNO",
+      "city_name": "Leszno",
+      "population": 63955,
+      "primary_value": 21.61,
+      "metrics": {
+        "mean": 21.61,
+        "median": 14.0,
+        "n_samples": 236,
+        "std": 22.55,
+        "mean_no_outliers_mad": 16.75
+      },
+      "percentiles": {
+        "p10": 2.0,
+        "p25": 7.0,
+        "p75": 27.0,
+        "p90": 47.0,
+        "p95": 73.5
+      }
+    }
+  ],
+  "summary": {
+    "total_cities": 35,
+    "best_performer": {
+      "city_name": "Wrocław",
+      "value": 6.37
+    },
+    "worst_performer": {
+      "city_name": "Leszno",
+      "value": 21.61
+    },
+    "top_5_avg": 7.10,
+    "large_cities_avg": 7.53,
+    "quartiles": {
+      "q1": 8.42,
+      "q2": 10.10,
+      "q3": 13.36
+    }
+  },
+  "chart_data": {
+    "bar_chart": {
+      "x_axis": "city_name",
+      "y_axis": "primary_value",
+      "title": "Średni czas czekania na odjazd w miastach Polski"
+    },
+    "scatter_plot": {
+      "x_axis": "population",
+      "y_axis": "primary_value",
+      "title": "Czas czekania vs wielkość miasta"
+    }
+  }
+}

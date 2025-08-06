@@ -1,0 +1,786 @@
+{
+  "metadata": {
+    "indicator_id": "speed_v2",
+    "name": "Najszybciej v2",
+    "description": "Średnia prędkość ważona transportu publicznego",
+    "unit": "km/h",
+    "sort_direction": "desc",
+    "explanation": "Im wyższa prędkość, tym szybszy transport publiczny. Mierzy średnią prędkość ważoną dystansem i czasem podróży.",
+    "methodology": "Analiza prędkości transportu publicznego (bez pociągów) w dni robocze w godzinach 6:00-22:00, z wykluczeniem wartości odstających metodą MAD",
+    "data_coverage": {
+      "total_regions": 36,
+      "has_complete_data": true,
+      "special_notes": "Wersja v2 wyklucza pociągi z analizy. Wszystkie regiony mają kompletne dane."
+    }
+  },
+  "columns": {
+    "primary_metric": {
+      "key": "avg_speed_weighted",
+      "name": "Średnia prędkość ważona",
+      "unit": "km/h",
+      "format": "decimal",
+      "precision": 2
+    },
+    "secondary_metrics": [
+      {
+        "key": "mean_speed",
+        "name": "Średnia prędkość",
+        "unit": "km/h",
+        "format": "decimal",
+        "precision": 2
+      },
+      {
+        "key": "n_records",
+        "name": "Liczba rekordów",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      },
+      {
+        "key": "median_speed",
+        "name": "Mediana prędkości",
+        "unit": "km/h",
+        "format": "decimal",
+        "precision": 2
+      }
+    ],
+    "ranking": {
+      "key": "rank",
+      "name": "Pozycja",
+      "generated": true
+    }
+  },
+  "data": [
+
+    {
+      "rank": 1,
+      "region_code": "GOP",
+      "city_name": "Górnośląski Okręg Przemysłowy",
+      "population": 2800000,
+      "primary_value": 28.22,
+      "metrics": {
+        "avg_speed_weighted": 28.22,
+        "mean_speed": 28.57,
+        "median_speed": 26.65,
+        "n_records": 13639,
+        "std_speed": 10.18
+      },
+      "percentiles": {
+        "p25": 22.25,
+        "p75": 32.20,
+        "p90": 39.58,
+        "p95": 46.77
+      }
+    },
+    {
+      "rank": 2,
+      "region_code": "WARSZAWA",
+      "city_name": "Warszawa",
+      "population": 1790658,
+      "primary_value": 27.85,
+      "metrics": {
+        "avg_speed_weighted": 27.85,
+        "mean_speed": 28.36,
+        "median_speed": 25.95,
+        "n_records": 55267,
+        "std_speed": 10.18
+      },
+      "percentiles": {
+        "p25": 21.37,
+        "p75": 32.55,
+        "p90": 41.06,
+        "p95": 47.65
+      }
+    },
+    {
+      "rank": 3,
+      "region_code": "RYBNIK",
+      "city_name": "Rybnik",
+      "population": 137128,
+      "primary_value": 27.83,
+      "metrics": {
+        "avg_speed_weighted": 27.83,
+        "mean_speed": 28.79,
+        "median_speed": 27.90,
+        "n_records": 448,
+        "std_speed": 6.48
+      },
+      "percentiles": {
+        "p25": 25.15,
+        "p75": 30.35,
+        "p90": 34.77,
+        "p95": 39.98
+      }
+    },
+    {
+      "rank": 4,
+      "region_code": "KOLOBRZEG",
+      "city_name": "Kołobrzeg",
+      "population": 46830,
+      "primary_value": 26.88,
+      "metrics": {
+        "avg_speed_weighted": 26.88,
+        "mean_speed": 27.83,
+        "median_speed": 26.03,
+        "n_records": 116,
+        "std_speed": 6.97
+      },
+      "percentiles": {
+        "p25": 22.76,
+        "p75": 31.21,
+        "p90": 36.55,
+        "p95": 38.67
+      }
+    },
+    {
+      "rank": 5,
+      "region_code": "KONIN",
+      "city_name": "Konin",
+      "population": 72218,
+      "primary_value": 26.17,
+      "metrics": {
+        "avg_speed_weighted": 26.17,
+        "mean_speed": 27.02,
+        "median_speed": 26.00,
+        "n_records": 623,
+        "std_speed": 6.09
+      },
+      "percentiles": {
+        "p25": 23.33,
+        "p75": 29.00,
+        "p90": 33.17,
+        "p95": 37.30
+      }
+    },
+    {
+      "rank": 6,
+      "region_code": "OSTROW",
+      "city_name": "Ostrów Wielkopolski",
+      "population": 71130,
+      "primary_value": 26.16,
+      "metrics": {
+        "avg_speed_weighted": 26.16,
+        "mean_speed": 26.40,
+        "median_speed": 24.38,
+        "n_records": 90,
+        "std_speed": 7.32
+      },
+      "percentiles": {
+        "p25": 21.52,
+        "p75": 27.93,
+        "p90": 35.28,
+        "p95": 40.02
+      }
+    },
+    {
+      "rank": 7,
+      "region_code": "JELENIA_GORA",
+      "city_name": "Jelenia Góra",
+      "population": 78335,
+      "primary_value": 25.74,
+      "metrics": {
+        "avg_speed_weighted": 25.74,
+        "mean_speed": 26.89,
+        "median_speed": 26.29,
+        "n_records": 1029,
+        "std_speed": 6.63
+      },
+      "percentiles": {
+        "p25": 22.67,
+        "p75": 29.35,
+        "p90": 34.26,
+        "p95": 38.92
+      }
+    },
+    {
+      "rank": 8,
+      "region_code": "NOWY_SACZ",
+      "city_name": "Nowy Sącz",
+      "population": 83116,
+      "primary_value": 25.54,
+      "metrics": {
+        "avg_speed_weighted": 25.54,
+        "mean_speed": 26.31,
+        "median_speed": 25.46,
+        "n_records": 506,
+        "std_speed": 6.14
+      },
+      "percentiles": {
+        "p25": 22.66,
+        "p75": 28.68,
+        "p90": 33.18,
+        "p95": 37.38
+      }
+    },
+    {
+      "rank": 9,
+      "region_code": "SZCZECIN",
+      "city_name": "Szczecin",
+      "population": 399515,
+      "primary_value": 24.93,
+      "metrics": {
+        "avg_speed_weighted": 24.93,
+        "mean_speed": 25.46,
+        "median_speed": 23.61,
+        "n_records": 5515,
+        "std_speed": 9.10
+      },
+      "percentiles": {
+        "p25": 19.37,
+        "p75": 29.25,
+        "p90": 35.99,
+        "p95": 40.78
+      }
+    },
+    {
+      "rank": 10,
+      "region_code": "TROJMIASTO",
+      "city_name": "Trójmiasto",
+      "population": 748348,
+      "primary_value": 24.94,
+      "metrics": {
+        "avg_speed_weighted": 24.94,
+        "mean_speed": 25.72,
+        "median_speed": 23.88,
+        "n_records": 18317,
+        "std_speed": 8.04
+      },
+      "percentiles": {
+        "p25": 20.34,
+        "p75": 28.88,
+        "p90": 35.27,
+        "p95": 39.67
+      }
+    },
+    {
+      "rank": 11,
+      "region_code": "POZNAN",
+      "city_name": "Poznań",
+      "population": 546859,
+      "primary_value": 24.44,
+      "metrics": {
+        "avg_speed_weighted": 24.44,
+        "mean_speed": 25.09,
+        "median_speed": 23.12,
+        "n_records": 29066,
+        "std_speed": 8.51
+      },
+      "percentiles": {
+        "p25": 19.42,
+        "p75": 28.34,
+        "p90": 35.12,
+        "p95": 40.71
+      }
+    },
+    {
+      "rank": 12,
+      "region_code": "KRAKOW",
+      "city_name": "Kraków",
+      "population": 779966,
+      "primary_value": 24.24,
+      "metrics": {
+        "avg_speed_weighted": 24.24,
+        "mean_speed": 25.79,
+        "median_speed": 23.83,
+        "n_records": 41192,
+        "std_speed": 8.45
+      },
+      "percentiles": {
+        "p25": 20.47,
+        "p75": 28.60,
+        "p90": 34.74,
+        "p95": 40.38
+      }
+    },
+    {
+      "rank": 13,
+      "region_code": "PILA",
+      "city_name": "Piła",
+      "population": 73497,
+      "primary_value": 24.22,
+      "metrics": {
+        "avg_speed_weighted": 24.22,
+        "mean_speed": 25.20,
+        "median_speed": 23.09,
+        "n_records": 137,
+        "std_speed": 6.97
+      },
+      "percentiles": {
+        "p25": 20.59,
+        "p75": 27.92,
+        "p90": 33.54,
+        "p95": 41.01
+      }
+    },
+    {
+      "rank": 14,
+      "region_code": "CZESTOCHOWA",
+      "city_name": "Częstochowa",
+      "population": 217530,
+      "primary_value": 24.20,
+      "metrics": {
+        "avg_speed_weighted": 24.20,
+        "mean_speed": 25.48,
+        "median_speed": 24.03,
+        "n_records": 996,
+        "std_speed": 6.72
+      },
+      "percentiles": {
+        "p25": 21.22,
+        "p75": 27.65,
+        "p90": 32.60,
+        "p95": 36.84
+      }
+    },
+    {
+      "rank": 15,
+      "region_code": "TORUN",
+      "city_name": "Toruń",
+      "population": 201447,
+      "primary_value": 23.96,
+      "metrics": {
+        "avg_speed_weighted": 23.96,
+        "mean_speed": 24.60,
+        "median_speed": 22.96,
+        "n_records": 4274,
+        "std_speed": 7.03
+      },
+      "percentiles": {
+        "p25": 20.21,
+        "p75": 27.14,
+        "p90": 32.38,
+        "p95": 37.03
+      }
+    },
+    {
+      "rank": 16,
+      "region_code": "BYDGOSZCZ",
+      "city_name": "Bydgoszcz",
+      "population": 342688,
+      "primary_value": 23.92,
+      "metrics": {
+        "avg_speed_weighted": 23.92,
+        "mean_speed": 24.80,
+        "median_speed": 23.14,
+        "n_records": 7263,
+        "std_speed": 7.61
+      },
+      "percentiles": {
+        "p25": 20.17,
+        "p75": 27.08,
+        "p90": 32.76,
+        "p95": 37.86
+      }
+    },
+    {
+      "rank": 17,
+      "region_code": "LESZNO",
+      "city_name": "Leszno",
+      "population": 63955,
+      "primary_value": 23.74,
+      "metrics": {
+        "avg_speed_weighted": 23.74,
+        "mean_speed": 24.59,
+        "median_speed": 23.17,
+        "n_records": 235,
+        "std_speed": 8.29
+      },
+      "percentiles": {
+        "p25": 20.58,
+        "p75": 25.99,
+        "p90": 30.21,
+        "p95": 34.09
+      }
+    },
+    {
+      "rank": 18,
+      "region_code": "ZIELONA_GORA",
+      "city_name": "Zielona Góra",
+      "population": 140892,
+      "primary_value": 23.53,
+      "metrics": {
+        "avg_speed_weighted": 23.53,
+        "mean_speed": 24.69,
+        "median_speed": 23.23,
+        "n_records": 2917,
+        "std_speed": 6.34
+      },
+      "percentiles": {
+        "p25": 20.90,
+        "p75": 26.92,
+        "p90": 31.53,
+        "p95": 35.40
+      }
+    },
+    {
+      "rank": 19,
+      "region_code": "GNIEZNO",
+      "city_name": "Gniezno",
+      "population": 67156,
+      "primary_value": 22.75,
+      "metrics": {
+        "avg_speed_weighted": 22.75,
+        "mean_speed": 23.41,
+        "median_speed": 22.60,
+        "n_records": 166,
+        "std_speed": 5.12
+      },
+      "percentiles": {
+        "p25": 19.79,
+        "p75": 25.74,
+        "p90": 29.44,
+        "p95": 31.14
+      }
+    },
+    {
+      "rank": 20,
+      "region_code": "KIELCE",
+      "city_name": "Kielce",
+      "population": 196844,
+      "primary_value": 22.78,
+      "metrics": {
+        "avg_speed_weighted": 22.78,
+        "mean_speed": 22.82,
+        "median_speed": 21.66,
+        "n_records": 1728,
+        "std_speed": 6.14
+      },
+      "percentiles": {
+        "p25": 18.48,
+        "p75": 25.84,
+        "p90": 30.32,
+        "p95": 33.78
+      }
+    },
+    {
+      "rank": 21,
+      "region_code": "GORZOW",
+      "city_name": "Gorzów Wielkopolski",
+      "population": 123762,
+      "primary_value": 22.49,
+      "metrics": {
+        "avg_speed_weighted": 22.49,
+        "mean_speed": 23.43,
+        "median_speed": 22.46,
+        "n_records": 1310,
+        "std_speed": 5.99
+      },
+      "percentiles": {
+        "p25": 19.70,
+        "p75": 26.00,
+        "p90": 29.82,
+        "p95": 33.58
+      }
+    },
+    {
+      "rank": 22,
+      "region_code": "TARNOW",
+      "city_name": "Tarnów",
+      "population": 107927,
+      "primary_value": 22.18,
+      "metrics": {
+        "avg_speed_weighted": 22.18,
+        "mean_speed": 23.00,
+        "median_speed": 21.63,
+        "n_records": 202,
+        "std_speed": 5.03
+      },
+      "percentiles": {
+        "p25": 19.90,
+        "p75": 25.60,
+        "p90": 29.59,
+        "p95": 32.08
+      }
+    },
+    {
+      "rank": 23,
+      "region_code": "STARGARD",
+      "city_name": "Stargard",
+      "population": 68040,
+      "primary_value": 22.10,
+      "metrics": {
+        "avg_speed_weighted": 22.10,
+        "mean_speed": 21.84,
+        "median_speed": 20.17,
+        "n_records": 120,
+        "std_speed": 8.00
+      },
+      "percentiles": {
+        "p25": 16.58,
+        "p75": 26.41,
+        "p90": 31.44,
+        "p95": 36.24
+      }
+    },
+    {
+      "rank": 24,
+      "region_code": "RADOM",
+      "city_name": "Radom",
+      "population": 210863,
+      "primary_value": 22.00,
+      "metrics": {
+        "avg_speed_weighted": 22.00,
+        "mean_speed": 22.93,
+        "median_speed": 21.54,
+        "n_records": 1203,
+        "std_speed": 6.84
+      },
+      "percentiles": {
+        "p25": 18.80,
+        "p75": 25.34,
+        "p90": 29.47,
+        "p95": 33.09
+      }
+    },
+    {
+      "rank": 25,
+      "region_code": "OPOLE",
+      "city_name": "Opole",
+      "population": 127387,
+      "primary_value": 21.93,
+      "metrics": {
+        "avg_speed_weighted": 21.93,
+        "mean_speed": 22.40,
+        "median_speed": 21.22,
+        "n_records": 841,
+        "std_speed": 5.35
+      },
+      "percentiles": {
+        "p25": 18.84,
+        "p75": 24.96,
+        "p90": 29.68,
+        "p95": 32.20
+      }
+    },
+    {
+      "rank": 26,
+      "region_code": "RZESZOW",
+      "city_name": "Rzeszów",
+      "population": 196821,
+      "primary_value": 21.87,
+      "metrics": {
+        "avg_speed_weighted": 21.87,
+        "mean_speed": 23.33,
+        "median_speed": 22.14,
+        "n_records": 2613,
+        "std_speed": 7.23
+      },
+      "percentiles": {
+        "p25": 19.24,
+        "p75": 25.89,
+        "p90": 30.30,
+        "p95": 34.28
+      }
+    },
+    {
+      "rank": 27,
+      "region_code": "GRUDZIADZ",
+      "city_name": "Grudziądz",
+      "population": 92681,
+      "primary_value": 21.86,
+      "metrics": {
+        "avg_speed_weighted": 21.86,
+        "mean_speed": 22.74,
+        "median_speed": 21.91,
+        "n_records": 303,
+        "std_speed": 6.00
+      },
+      "percentiles": {
+        "p25": 19.27,
+        "p75": 24.69,
+        "p90": 27.77,
+        "p95": 31.35
+      }
+    },
+    {
+      "rank": 28,
+      "region_code": "ELBLAG",
+      "city_name": "Elbląg",
+      "population": 119317,
+      "primary_value": 21.08,
+      "metrics": {
+        "avg_speed_weighted": 21.08,
+        "mean_speed": 22.63,
+        "median_speed": 21.66,
+        "n_records": 62,
+        "std_speed": 5.63
+      },
+      "percentiles": {
+        "p25": 18.96,
+        "p75": 24.92,
+        "p90": 30.42,
+        "p95": 32.54
+      }
+    },
+    {
+      "rank": 29,
+      "region_code": "BIALYSTOK",
+      "city_name": "Białystok",
+      "population": 297554,
+      "primary_value": 20.87,
+      "metrics": {
+        "avg_speed_weighted": 20.87,
+        "mean_speed": 21.41,
+        "median_speed": 20.65,
+        "n_records": 2552,
+        "std_speed": 4.80
+      },
+      "percentiles": {
+        "p25": 18.59,
+        "p75": 23.14,
+        "p90": 26.24,
+        "p95": 28.58
+      }
+    },
+    {
+      "rank": 30,
+      "region_code": "OLSZTYN",
+      "city_name": "Olsztyn",
+      "population": 171249,
+      "primary_value": 20.83,
+      "metrics": {
+        "avg_speed_weighted": 20.83,
+        "mean_speed": 21.77,
+        "median_speed": 20.11,
+        "n_records": 2682,
+        "std_speed": 6.77
+      },
+      "percentiles": {
+        "p25": 17.75,
+        "p75": 23.92,
+        "p90": 29.37,
+        "p95": 33.66
+      }
+    },
+    {
+      "rank": 31,
+      "region_code": "LUBLIN",
+      "city_name": "Lublin",
+      "population": 338586,
+      "primary_value": 20.20,
+      "metrics": {
+        "avg_speed_weighted": 20.20,
+        "mean_speed": 21.48,
+        "median_speed": 20.16,
+        "n_records": 8426,
+        "std_speed": 6.54
+      },
+      "percentiles": {
+        "p25": 17.71,
+        "p75": 23.37,
+        "p90": 27.74,
+        "p95": 31.44
+      }
+    },
+    {
+      "rank": 32,
+      "region_code": "LODZ",
+      "city_name": "Łódź",
+      "population": 679941,
+      "primary_value": 20.17,
+      "metrics": {
+        "avg_speed_weighted": 20.17,
+        "mean_speed": 20.76,
+        "median_speed": 19.76,
+        "n_records": 5992,
+        "std_speed": 6.23
+      },
+      "percentiles": {
+        "p25": 16.90,
+        "p75": 23.07,
+        "p90": 27.40,
+        "p95": 31.35
+      }
+    },
+    {
+      "rank": 33,
+      "region_code": "WROCLAW",
+      "city_name": "Wrocław",
+      "population": 672929,
+      "primary_value": 19.82,
+      "metrics": {
+        "avg_speed_weighted": 19.82,
+        "mean_speed": 20.90,
+        "median_speed": 19.27,
+        "n_records": 38301,
+        "std_speed": 6.94
+      },
+      "percentiles": {
+        "p25": 16.63,
+        "p75": 23.18,
+        "p90": 28.14,
+        "p95": 32.22
+      }
+    },
+    {
+      "rank": 34,
+      "region_code": "INOWROCLAW",
+      "city_name": "Inowrocław",
+      "population": 73282,
+      "primary_value": 19.51,
+      "metrics": {
+        "avg_speed_weighted": 19.51,
+        "mean_speed": 20.63,
+        "median_speed": 19.01,
+        "n_records": 116,
+        "std_speed": 7.75
+      },
+      "percentiles": {
+        "p25": 16.07,
+        "p75": 22.42,
+        "p90": 27.28,
+        "p95": 30.59
+      }
+    },
+    {
+      "rank": 35,
+      "region_code": "SLUPSK",
+      "city_name": "Słupsk",
+      "population": 90747,
+      "primary_value": 22.81,
+      "metrics": {
+        "avg_speed_weighted": 22.81,
+        "mean_speed": 24.37,
+        "median_speed": 23.21,
+        "n_records": 523,
+        "std_speed": 7.06
+      },
+      "percentiles": {
+        "p25": 20.15,
+        "p75": 26.24,
+        "p90": 30.37,
+        "p95": 33.83
+      }
+    }
+  ],
+  "summary": {
+    "total_cities": 35,
+    "best_performer": {
+      "city_name": "Górnośląski Okręg Przemysłowy",
+      "value": 28.22
+    },
+    "worst_performer": {
+      "city_name": "Inowrocław",
+      "value": 19.51
+    },
+    "top_5_avg": 30.17,
+    "large_cities_avg": 23.53,
+    "quartiles": {
+      "q1": 21.08,
+      "q2": 22.78,
+      "q3": 24.94
+    }
+  },
+  "chart_data": {
+    "bar_chart": {
+      "x_axis": "city_name",
+      "y_axis": "primary_value",
+      "title": "Średnia prędkość ważona transportu publicznego w miastach Polski"
+    },
+    "scatter_plot": {
+      "x_axis": "population",
+      "y_axis": "primary_value",
+      "title": "Prędkość transportu vs wielkość miasta"
+    }
+  }
+}

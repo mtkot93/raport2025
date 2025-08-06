@@ -1,0 +1,646 @@
+{
+  "metadata": {
+    "indicator_id": "walking_distance",
+    "name": "Najmniej chodzenia",
+    "description": "Średnia długość tras pieszych w podróżach transportem publicznym",
+    "unit": "metry",
+    "sort_direction": "asc",
+    "explanation": "Im krótsze dystanse piesze, tym wygodniejszy transport publiczny. Mierzy odległości do przystanków i między przesiadkami.",
+    "methodology": "Analiza długości tras pieszych (edge_stops_walk_length_meters) we wszystkich podróżach transportem publicznym",
+    "data_coverage": {
+      "total_regions": 36,
+      "has_complete_data": true,
+      "special_notes": "Wszystkie regiony mają kompletne dane"
+    }
+  },
+  "columns": {
+    "primary_metric": {
+      "key": "srednia_chodzenie_m",
+      "name": "Średnia długość chodzenia",
+      "unit": "m",
+      "format": "decimal",
+      "precision": 1
+    },
+    "secondary_metrics": [
+      {
+        "key": "mediana_chodzenie_m",
+        "name": "Mediana",
+        "unit": "m",
+        "format": "decimal",
+        "precision": 0
+      },
+      {
+        "key": "liczba_tras",
+        "name": "Liczba tras",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      },
+      {
+        "key": "ranking",
+        "name": "Pozycja w rankingu",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      }
+    ],
+    "ranking": {
+      "key": "rank",
+      "name": "Pozycja",
+      "generated": true
+    }
+  },
+  "data": [
+    {
+      "rank": 1,
+      "region_code": "GRUDZIADZ",
+      "city_name": "Grudziądz",
+      "population": 92681,
+      "primary_value": 456.3,
+      "metrics": {
+        "srednia_chodzenie_m": 456.3,
+        "mediana_chodzenie_m": 340.0,
+        "odchylenie_std": 407.5,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2960,
+        "liczba_tras": 253,
+        "ranking": 1
+      }
+    },
+    {
+      "rank": 2,
+      "region_code": "OLSZTYN",
+      "city_name": "Olsztyn",
+      "population": 171249,
+      "primary_value": 463.3,
+      "metrics": {
+        "srednia_chodzenie_m": 463.3,
+        "mediana_chodzenie_m": 380.0,
+        "odchylenie_std": 349.5,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2260,
+        "liczba_tras": 1794,
+        "ranking": 2
+      }
+    },
+    {
+      "rank": 3,
+      "region_code": "JELENIA_GORA",
+      "city_name": "Jelenia Góra",
+      "population": 78335,
+      "primary_value": 464.6,
+      "metrics": {
+        "srednia_chodzenie_m": 464.6,
+        "mediana_chodzenie_m": 370.0,
+        "odchylenie_std": 391.1,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2390,
+        "liczba_tras": 824,
+        "ranking": 3
+      }
+    },
+    {
+      "rank": 4,
+      "region_code": "KONIN",
+      "city_name": "Konin",
+      "population": 72218,
+      "primary_value": 477.4,
+      "metrics": {
+        "srednia_chodzenie_m": 477.4,
+        "mediana_chodzenie_m": 370.0,
+        "odchylenie_std": 530.3,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 6540,
+        "liczba_tras": 366,
+        "ranking": 4
+      }
+    },
+    {
+      "rank": 5,
+      "region_code": "ZIELONA_GORA",
+      "city_name": "Zielona Góra",
+      "population": 140892,
+      "primary_value": 490.7,
+      "metrics": {
+        "srednia_chodzenie_m": 490.7,
+        "mediana_chodzenie_m": 410.0,
+        "odchylenie_std": 372.5,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2650,
+        "liczba_tras": 1988,
+        "ranking": 5
+      }
+    },
+    {
+      "rank": 6,
+      "region_code": "GORZOW",
+      "city_name": "Gorzów Wielkopolski",
+      "population": 123762,
+      "primary_value": 492.4,
+      "metrics": {
+        "srednia_chodzenie_m": 492.4,
+        "mediana_chodzenie_m": 390.0,
+        "odchylenie_std": 387.1,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2850,
+        "liczba_tras": 1000,
+        "ranking": 6
+      }
+    },
+    {
+      "rank": 7,
+      "region_code": "WROCLAW",
+      "city_name": "Wrocław",
+      "population": 672929,
+      "primary_value": 496.4,
+      "metrics": {
+        "srednia_chodzenie_m": 496.4,
+        "mediana_chodzenie_m": 430.0,
+        "odchylenie_std": 374.3,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 7030,
+        "liczba_tras": 37494,
+        "ranking": 7
+      }
+    },
+    {
+      "rank": 8,
+      "region_code": "GNIEZNO",
+      "city_name": "Gniezno",
+      "population": 67156,
+      "primary_value": 499.3,
+      "metrics": {
+        "srednia_chodzenie_m": 499.3,
+        "mediana_chodzenie_m": 440.0,
+        "odchylenie_std": 364.4,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 1800,
+        "liczba_tras": 146,
+        "ranking": 8
+      }
+    },
+    {
+      "rank": 9,
+      "region_code": "SZCZECIN",
+      "city_name": "Szczecin",
+      "population": 399515,
+      "primary_value": 506.8,
+      "metrics": {
+        "srednia_chodzenie_m": 506.8,
+        "mediana_chodzenie_m": 430.0,
+        "odchylenie_std": 392.3,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 7510,
+        "liczba_tras": 4930,
+        "ranking": 9
+      }
+    },
+    {
+      "rank": 10,
+      "region_code": "TORUN",
+      "city_name": "Toruń",
+      "population": 201447,
+      "primary_value": 510.6,
+      "metrics": {
+        "srednia_chodzenie_m": 510.6,
+        "mediana_chodzenie_m": 440.0,
+        "odchylenie_std": 377.2,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 6970,
+        "liczba_tras": 3258,
+        "ranking": 10
+      }
+    },
+    {
+      "rank": 11,
+      "region_code": "STARGARD",
+      "city_name": "Stargard",
+      "population": 68040,
+      "primary_value": 511.6,
+      "metrics": {
+        "srednia_chodzenie_m": 511.6,
+        "mediana_chodzenie_m": 390.0,
+        "odchylenie_std": 393.1,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2120,
+        "liczba_tras": 129,
+        "ranking": 11
+      }
+    },
+
+    {
+      "rank": 12,
+      "region_code": "GOP",
+      "city_name": "Górnośląski Okręg Przemysłowy",
+      "population": 2800000,
+      "primary_value": 521.5,
+      "metrics": {
+        "srednia_chodzenie_m": 521.5,
+        "mediana_chodzenie_m": 430.0,
+        "odchylenie_std": 425.9,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 6950,
+        "liczba_tras": 11016,
+        "ranking": 12
+      }
+    },
+    {
+      "rank": 13,
+      "region_code": "KRAKOW",
+      "city_name": "Kraków",
+      "population": 779966,
+      "primary_value": 530.8,
+      "metrics": {
+        "srednia_chodzenie_m": 530.8,
+        "mediana_chodzenie_m": 460.0,
+        "odchylenie_std": 394.8,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 4500,
+        "liczba_tras": 37068,
+        "ranking": 13
+      }
+    },
+    {
+      "rank": 14,
+      "region_code": "POZNAN",
+      "city_name": "Poznań",
+      "population": 546859,
+      "primary_value": 533.1,
+      "metrics": {
+        "srednia_chodzenie_m": 533.1,
+        "mediana_chodzenie_m": 460.0,
+        "odchylenie_std": 403.2,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 5600,
+        "liczba_tras": 26670,
+        "ranking": 14
+      }
+    },
+    {
+      "rank": 15,
+      "region_code": "SLUPSK",
+      "city_name": "Słupsk",
+      "population": 90747,
+      "primary_value": 534.0,
+      "metrics": {
+        "srednia_chodzenie_m": 534.0,
+        "mediana_chodzenie_m": 460.0,
+        "odchylenie_std": 395.0,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2920,
+        "liczba_tras": 299,
+        "ranking": 15
+      }
+    },
+    {
+      "rank": 16,
+      "region_code": "NOWY_SACZ",
+      "city_name": "Nowy Sącz",
+      "population": 83116,
+      "primary_value": 538.9,
+      "metrics": {
+        "srednia_chodzenie_m": 538.9,
+        "mediana_chodzenie_m": 420.0,
+        "odchylenie_std": 458.2,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2720,
+        "liczba_tras": 409,
+        "ranking": 16
+      }
+    },
+    {
+      "rank": 17,
+      "region_code": "CZESTOCHOWA",
+      "city_name": "Częstochowa",
+      "population": 217530,
+      "primary_value": 539.4,
+      "metrics": {
+        "srednia_chodzenie_m": 539.4,
+        "mediana_chodzenie_m": 480.0,
+        "odchylenie_std": 408.9,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 3600,
+        "liczba_tras": 863,
+        "ranking": 17
+      }
+    },
+    {
+      "rank": 18,
+      "region_code": "OPOLE",
+      "city_name": "Opole",
+      "population": 127387,
+      "primary_value": 548.1,
+      "metrics": {
+        "srednia_chodzenie_m": 548.1,
+        "mediana_chodzenie_m": 480.0,
+        "odchylenie_std": 373.1,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2240,
+        "liczba_tras": 695,
+        "ranking": 18
+      }
+    },
+    {
+      "rank": 19,
+      "region_code": "LUBLIN",
+      "city_name": "Lublin",
+      "population": 338586,
+      "primary_value": 550.0,
+      "metrics": {
+        "srednia_chodzenie_m": 550.0,
+        "mediana_chodzenie_m": 490.0,
+        "odchylenie_std": 371.9,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 3300,
+        "liczba_tras": 7301,
+        "ranking": 19
+      }
+    },
+    {
+      "rank": 20,
+      "region_code": "RYBNIK",
+      "city_name": "Rybnik",
+      "population": 137128,
+      "primary_value": 555.2,
+      "metrics": {
+        "srednia_chodzenie_m": 555.2,
+        "mediana_chodzenie_m": 370.0,
+        "odchylenie_std": 593.7,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 4220,
+        "liczba_tras": 311,
+        "ranking": 20
+      }
+    },
+    {
+      "rank": 21,
+      "region_code": "TROJMIASTO",
+      "city_name": "Trójmiasto",
+      "population": 748348,
+      "primary_value": 562.7,
+      "metrics": {
+        "srednia_chodzenie_m": 562.7,
+        "mediana_chodzenie_m": 470.0,
+        "odchylenie_std": 443.2,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 6940,
+        "liczba_tras": 18628,
+        "ranking": 21
+      }
+    },
+    {
+      "rank": 22,
+      "region_code": "LESZNO",
+      "city_name": "Leszno",
+      "population": 63955,
+      "primary_value": 569.4,
+      "metrics": {
+        "srednia_chodzenie_m": 569.4,
+        "mediana_chodzenie_m": 490.0,
+        "odchylenie_std": 382.7,
+        "min_chodzenie_m": 20,
+        "max_chodzenie_m": 2080,
+        "liczba_tras": 216,
+        "ranking": 22
+      }
+    },
+    {
+      "rank": 23,
+      "region_code": "INOWROCLAW",
+      "city_name": "Inowrocław",
+      "population": 73282,
+      "primary_value": 592.4,
+      "metrics": {
+        "srednia_chodzenie_m": 592.4,
+        "mediana_chodzenie_m": 510.0,
+        "odchylenie_std": 542.6,
+        "min_chodzenie_m": 40,
+        "max_chodzenie_m": 5040,
+        "liczba_tras": 116,
+        "ranking": 23
+      }
+    },
+    {
+      "rank": 24,
+      "region_code": "BYDGOSZCZ",
+      "city_name": "Bydgoszcz",
+      "population": 342688,
+      "primary_value": 593.2,
+      "metrics": {
+        "srednia_chodzenie_m": 593.2,
+        "mediana_chodzenie_m": 540.0,
+        "odchylenie_std": 408.8,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 6460,
+        "liczba_tras": 7336,
+        "ranking": 24
+      }
+    },
+    {
+      "rank": 25,
+      "region_code": "KIELCE",
+      "city_name": "Kielce",
+      "population": 196844,
+      "primary_value": 595.8,
+      "metrics": {
+        "srednia_chodzenie_m": 595.8,
+        "mediana_chodzenie_m": 500.0,
+        "odchylenie_std": 538.0,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 7760,
+        "liczba_tras": 1570,
+        "ranking": 25
+      }
+    },
+    {
+      "rank": 26,
+      "region_code": "WARSZAWA",
+      "city_name": "Warszawa",
+      "population": 1790658,
+      "primary_value": 597.9,
+      "metrics": {
+        "srednia_chodzenie_m": 597.9,
+        "mediana_chodzenie_m": 530.0,
+        "odchylenie_std": 416.1,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 7000,
+        "liczba_tras": 61179,
+        "ranking": 26
+      }
+    },
+    {
+      "rank": 27,
+      "region_code": "PILA",
+      "city_name": "Piła",
+      "population": 73497,
+      "primary_value": 600.9,
+      "metrics": {
+        "srednia_chodzenie_m": 600.9,
+        "mediana_chodzenie_m": 540.0,
+        "odchylenie_std": 367.1,
+        "min_chodzenie_m": 40,
+        "max_chodzenie_m": 1640,
+        "liczba_tras": 128,
+        "ranking": 27
+      }
+    },
+    {
+      "rank": 28,
+      "region_code": "RADOM",
+      "city_name": "Radom",
+      "population": 210863,
+      "primary_value": 602.2,
+      "metrics": {
+        "srednia_chodzenie_m": 602.2,
+        "mediana_chodzenie_m": 520.0,
+        "odchylenie_std": 415.0,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 3280,
+        "liczba_tras": 1101,
+        "ranking": 28
+      }
+    },
+    {
+      "rank": 29,
+      "region_code": "ELBLAG",
+      "city_name": "Elbląg",
+      "population": 119317,
+      "primary_value": 644.4,
+      "metrics": {
+        "srednia_chodzenie_m": 644.4,
+        "mediana_chodzenie_m": 550.0,
+        "odchylenie_std": 446.6,
+        "min_chodzenie_m": 60,
+        "max_chodzenie_m": 2700,
+        "liczba_tras": 66,
+        "ranking": 29
+      }
+    },
+    {
+      "rank": 30,
+      "region_code": "LODZ",
+      "city_name": "Łódź",
+      "population": 679941,
+      "primary_value": 650.3,
+      "metrics": {
+        "srednia_chodzenie_m": 650.3,
+        "mediana_chodzenie_m": 600.0,
+        "odchylenie_std": 414.5,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 5580,
+        "liczba_tras": 6614,
+        "ranking": 30
+      }
+    },
+    {
+      "rank": 31,
+      "region_code": "RZESZOW",
+      "city_name": "Rzeszów",
+      "population": 196821,
+      "primary_value": 662.8,
+      "metrics": {
+        "srednia_chodzenie_m": 662.8,
+        "mediana_chodzenie_m": 600.0,
+        "odchylenie_std": 438.9,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 4640,
+        "liczba_tras": 2622,
+        "ranking": 31
+      }
+    },
+    {
+      "rank": 32,
+      "region_code": "TARNOW",
+      "city_name": "Tarnów",
+      "population": 107927,
+      "primary_value": 668.9,
+      "metrics": {
+        "srednia_chodzenie_m": 668.9,
+        "mediana_chodzenie_m": 590.0,
+        "odchylenie_std": 455.3,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 3290,
+        "liczba_tras": 199,
+        "ranking": 32
+      }
+    },
+    {
+      "rank": 33,
+      "region_code": "BIALYSTOK",
+      "city_name": "Białystok",
+      "population": 297554,
+      "primary_value": 710.6,
+      "metrics": {
+        "srednia_chodzenie_m": 710.6,
+        "mediana_chodzenie_m": 670.0,
+        "odchylenie_std": 395.6,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 3000,
+        "liczba_tras": 2705,
+        "ranking": 33
+      }
+    },
+    {
+      "rank": 34,
+      "region_code": "OSTROW",
+      "city_name": "Ostrów Wielkopolski",
+      "population": 71130,
+      "primary_value": 745.4,
+      "metrics": {
+        "srednia_chodzenie_m": 745.4,
+        "mediana_chodzenie_m": 615.0,
+        "odchylenie_std": 514.5,
+        "min_chodzenie_m": 20,
+        "max_chodzenie_m": 2410,
+        "liczba_tras": 78,
+        "ranking": 34
+      }
+    },
+    {
+      "rank": 35,
+      "region_code": "KOLOBRZEG",
+      "city_name": "Kołobrzeg",
+      "population": 46830,
+      "primary_value": 785.7,
+      "metrics": {
+        "srednia_chodzenie_m": 785.7,
+        "mediana_chodzenie_m": 700.0,
+        "odchylenie_std": 523.1,
+        "min_chodzenie_m": 10,
+        "max_chodzenie_m": 2260,
+        "liczba_tras": 117,
+        "ranking": 35
+      }
+    }
+  ],
+  "summary": {
+    "total_cities": 35,
+    "best_performer": {
+      "city_name": "Grudziądz",
+      "value": 456.3
+    },
+    "worst_performer": {
+      "city_name": "Kołobrzeg",
+      "value": 785.7
+    },
+    "top_5_avg": 472.5,
+    "large_cities_avg": 552.8,
+    "quartiles": {
+      "q1": 506.8,
+      "q2": 544.2,
+      "q3": 596.5
+    }
+  },
+  "chart_data": {
+    "bar_chart": {
+      "x_axis": "city_name",
+      "y_axis": "primary_value",
+      "title": "Średnia długość chodzenia w miastach Polski"
+    },
+    "scatter_plot": {
+      "x_axis": "population",
+      "y_axis": "primary_value",
+      "title": "Długość chodzenia vs wielkość miasta"
+    }
+  }
+}

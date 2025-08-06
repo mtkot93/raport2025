@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "indicator_id": "cost",
+    "name": "Najtaniej",
+    "description": "Średni koszt transportu publicznego za kilometr",
+    "unit": "PLN/km",
+    "sort_direction": "asc",
+    "explanation": "Im niższy koszt za kilometr, tym tańszy transport publiczny. Mierzy średni koszt podróży przeliczony na kilometr dystansu.",
+    "methodology": "Analiza kosztów podróży (total_price_cents) w przeliczeniu na dystans (transport_length_meters) z użyciem średniej ważonej",
+    "data_coverage": {
+      "total_regions": 5,
+      "has_complete_data": false,
+      "special_notes": "UWAGA: Tylko 5 regionów ma dostępne dane o kosztach transportu. Większość regionów nie raportuje szczegółowych informacji o cenach biletów."
+    }
+  },
+  "columns": {
+    "primary_metric": {
+      "key": "weighted_avg_cost_per_km",
+      "name": "Średni koszt za km",
+      "unit": "PLN/km",
+      "format": "decimal",
+      "precision": 3
+    },
+    "secondary_metrics": [
+      {
+        "key": "total_price_pln",
+        "name": "Całkowity koszt",
+        "unit": "PLN",
+        "format": "decimal",
+        "precision": 2
+      },
+      {
+        "key": "total_km",
+        "name": "Całkowity dystans",
+        "unit": "km",
+        "format": "decimal",
+        "precision": 1
+      },
+      {
+        "key": "records",
+        "name": "Liczba rekordów",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      }
+    ],
+    "ranking": {
+      "key": "rank",
+      "name": "Pozycja",
+      "generated": true
+    }
+  },
+  "data": [
+
+    {
+      "rank": 1,
+      "region_code": "RADOM",
+      "city_name": "Radom",
+      "population": 210863,
+      "primary_value": 0.355,
+      "metrics": {
+        "weighted_avg_cost_per_km": 0.355,
+        "total_price_pln": 21.34,
+        "total_km": 60.0,
+        "records": 3
+      }
+    },
+    {
+      "rank": 2,
+      "region_code": "TROJMIASTO",
+      "city_name": "Trójmiasto",
+      "population": 748348,
+      "primary_value": 0.428,
+      "metrics": {
+        "weighted_avg_cost_per_km": 0.428,
+        "total_price_pln": 10566.99,
+        "total_km": 24696.9,
+        "records": 1902
+      }
+    },
+    {
+      "rank": 3,
+      "region_code": "WARSZAWA",
+      "city_name": "Warszawa",
+      "population": 1790658,
+      "primary_value": 0.511,
+      "metrics": {
+        "weighted_avg_cost_per_km": 0.511,
+        "total_price_pln": 17804.69,
+        "total_km": 34820.9,
+        "records": 2073
+      }
+    },
+    {
+      "rank": 4,
+      "region_code": "KRAKOW",
+      "city_name": "Kraków",
+      "population": 779966,
+      "primary_value": 0.826,
+      "metrics": {
+        "weighted_avg_cost_per_km": 0.826,
+        "total_price_pln": 2694.05,
+        "total_km": 3261.3,
+        "records": 249
+      }
+    }
+  ],
+  "summary": {
+    "total_cities": 4,
+    "best_performer": {
+      "city_name": "Radom",
+      "value": 0.355
+    },
+    "worst_performer": {
+      "city_name": "Kraków",
+      "value": 0.826
+    },
+    "cities_only_avg": 0.530,
+    "weighted_avg": 0.498,
+    "cost_range": {
+      "min": 0.347,
+      "max": 0.826,
+      "spread": 0.479
+    }
+  },
+  "chart_data": {
+    "bar_chart": {
+      "x_axis": "city_name",
+      "y_axis": "primary_value",
+      "title": "Średni koszt transportu za kilometr w miastach z dostępnymi danymi"
+    },
+    "scatter_plot": {
+      "x_axis": "population",
+      "y_axis": "primary_value",
+      "title": "Koszt transportu vs wielkość miasta (tylko miasta z danymi)"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "indicator_id": "punctuality",
+    "name": "Najpunktualniej",
+    "description": "Średnie opóźnienie rzeczywiste transportu publicznego",
+    "unit": "minuty",
+    "sort_direction": "asc",
+    "explanation": "Im mniejsze opóźnienie, tym bardziej punktualny transport. Mierzy różnicę między czasem rzeczywistym a rozkładowym.",
+    "methodology": "Analiza rzeczywistych opóźnień (start_stop_abs_delay_minutes i target_stop_abs_delay_minutes) w dni robocze w godzinach 6:00-22:00, z wykluczeniem wartości odstających metodą MAD",
+    "data_coverage": {
+      "total_regions": 6,
+      "has_complete_data": false,
+      "special_notes": "UWAGA: Tylko 6 regionów ma dostępne dane o rzeczywistych opóźnieniach. Większość regionów nie raportuje tych danych."
+    }
+  },
+  "columns": {
+    "primary_metric": {
+      "key": "mean",
+      "name": "Średnie opóźnienie",
+      "unit": "min",
+      "format": "decimal",
+      "precision": 2
+    },
+    "secondary_metrics": [
+      {
+        "key": "median",
+        "name": "Mediana",
+        "unit": "min",
+        "format": "decimal",
+        "precision": 1
+      },
+      {
+        "key": "n_records",
+        "name": "Liczba rekordów",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      },
+      {
+        "key": "mean_no_outliers",
+        "name": "Średnia bez outlierów",
+        "unit": "min",
+        "format": "decimal",
+        "precision": 2
+      }
+    ],
+    "ranking": {
+      "key": "rank",
+      "name": "Pozycja",
+      "generated": true
+    }
+  },
+  "data": [
+    {
+      "rank": 1,
+      "region_code": "SZCZECIN",
+      "city_name": "Szczecin",
+      "population": 399515,
+      "primary_value": 0.45,
+      "metrics": {
+        "mean": 0.45,
+        "median": 0.0,
+        "n_records": 5414,
+        "std": 1.79,
+        "mean_no_outliers": 0.0
+      },
+      "percentiles": {
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 1.0,
+        "p95": 2.0
+      }
+    },
+
+    {
+      "rank": 2,
+      "region_code": "KRAKOW",
+      "city_name": "Kraków",
+      "population": 779966,
+      "primary_value": 0.74,
+      "metrics": {
+        "mean": 0.74,
+        "median": 0.0,
+        "n_records": 38234,
+        "std": 2.09,
+        "mean_no_outliers": 0.0
+      },
+      "percentiles": {
+        "p25": 0.0,
+        "p75": 0.5,
+        "p90": 2.0,
+        "p95": 4.5
+      }
+    },
+    {
+      "rank": 3,
+      "region_code": "WROCLAW",
+      "city_name": "Wrocław",
+      "population": 672929,
+      "primary_value": 0.77,
+      "metrics": {
+        "mean": 0.77,
+        "median": 0.0,
+        "n_records": 37519,
+        "std": 2.98,
+        "mean_no_outliers": 0.0
+      },
+      "percentiles": {
+        "p25": 0.0,
+        "p75": 0.5,
+        "p90": 1.5,
+        "p95": 4.0
+      }
+    },
+    {
+      "rank": 4,
+      "region_code": "TROJMIASTO",
+      "city_name": "Trójmiasto",
+      "population": 748348,
+      "primary_value": 1.06,
+      "metrics": {
+        "mean": 1.06,
+        "median": 0.0,
+        "n_records": 13761,
+        "std": 3.72,
+        "mean_no_outliers": 0.0
+      },
+      "percentiles": {
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 2.0,
+        "p95": 6.0
+      }
+    },
+    {
+      "rank": 5,
+      "region_code": "WARSZAWA",
+      "city_name": "Warszawa",
+      "population": 1790658,
+      "primary_value": 1.76,
+      "metrics": {
+        "mean": 1.76,
+        "median": 0.0,
+        "n_records": 59308,
+        "std": 9.82,
+        "mean_no_outliers": 0.0
+      },
+      "percentiles": {
+        "p25": 0.0,
+        "p75": 0.5,
+        "p90": 3.5,
+        "p95": 6.0
+      }
+    }
+  ],
+  "summary": {
+    "total_cities": 5,
+    "best_performer": {
+      "city_name": "Szczecin",
+      "value": 0.45
+    },
+    "worst_performer": {
+      "city_name": "Warszawa",
+      "value": 1.76
+    },
+    "top_3_avg": 0.62,
+    "average": 0.97,
+    "quartiles": {
+      "q1": 0.66,
+      "q2": 0.76,
+      "q3": 1.06
+    }
+  },
+  "chart_data": {
+    "bar_chart": {
+      "x_axis": "city_name",
+      "y_axis": "primary_value",
+      "title": "Średnie opóźnienie rzeczywiste w miastach z dostępnymi danymi"
+    },
+    "scatter_plot": {
+      "x_axis": "population",
+      "y_axis": "primary_value",
+      "title": "Opóźnienie vs wielkość miasta (tylko miasta z danymi)"
+    }
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "indicator_id": "transfers",
+    "name": "Najmniej przesiadek",
+    "description": "Średnia liczba przesiadek w podróżach transportem publicznym",
+    "unit": "przesiadki",
+    "sort_direction": "asc",
+    "explanation": "Im mniej przesiadek, tym wygodniejsza podróż. Mierzy średnią liczbę koniecznych przesiadek podczas podróży transportem publicznym.",
+    "methodology": "Analiza liczby przesiadek (number_of_transfers) we wszystkich podróżach transportem publicznym",
+    "data_coverage": {
+      "total_regions": 36,
+      "has_complete_data": true,
+      "special_notes": "Wszystkie regiony mają kompletne dane"
+    }
+  },
+  "columns": {
+    "primary_metric": {
+      "key": "srednia",
+      "name": "Średnia liczba przesiadek",
+      "unit": "",
+      "format": "decimal",
+      "precision": 3
+    },
+    "secondary_metrics": [
+      {
+        "key": "mediana",
+        "name": "Mediana",
+        "unit": "",
+        "format": "decimal",
+        "precision": 1
+      },
+      {
+        "key": "liczba_tras",
+        "name": "Liczba tras",
+        "unit": "",
+        "format": "integer",
+        "precision": 0
+      },
+      {
+        "key": "std",
+        "name": "Odchylenie standardowe",
+        "unit": "",
+        "format": "decimal",
+        "precision": 3
+      }
+    ],
+    "ranking": {
+      "key": "rank",
+      "name": "Pozycja",
+      "generated": true
+    }
+  },
+  "data": [
+    {
+      "rank": 1,
+      "region_code": "INOWROCLAW",
+      "city_name": "Inowrocław",
+      "population": 73282,
+      "primary_value": 0.060,
+      "metrics": {
+        "srednia": 0.060,
+        "mediana": 0.0,
+        "std": 0.269,
+        "liczba_tras": 133
+      }
+    },
+    {
+      "rank": 2,
+      "region_code": "KOLOBRZEG",
+      "city_name": "Kołobrzeg",
+      "population": 46830,
+      "primary_value": 0.085,
+      "metrics": {
+        "srednia": 0.085,
+        "mediana": 0.0,
+        "std": 0.280,
+        "liczba_tras": 129
+      }
+    },
+    {
+      "rank": 3,
+      "region_code": "GNIEZNO",
+      "city_name": "Gniezno",
+      "population": 67156,
+      "primary_value": 0.110,
+      "metrics": {
+        "srednia": 0.110,
+        "mediana": 0.0,
+        "std": 0.330,
+        "liczba_tras": 191
+      }
+    },
+    {
+      "rank": 4,
+      "region_code": "KONIN",
+      "city_name": "Konin",
+      "population": 72218,
+      "primary_value": 0.110,
+      "metrics": {
+        "srednia": 0.110,
+        "mediana": 0.0,
+        "std": 0.336,
+        "liczba_tras": 706
+      }
+    },
+    {
+      "rank": 5,
+      "region_code": "LESZNO",
+      "city_name": "Leszno",
+      "population": 63955,
+      "primary_value": 0.111,
+      "metrics": {
+        "srednia": 0.111,
+        "mediana": 0.0,
+        "std": 0.326,
+        "liczba_tras": 279
+      }
+    },
+    {
+      "rank": 6,
+      "region_code": "STARGARD",
+      "city_name": "Stargard",
+      "population": 68040,
+      "primary_value": 0.115,
+      "metrics": {
+        "srednia": 0.115,
+        "mediana": 0.0,
+        "std": 0.320,
+        "liczba_tras": 148
+      }
+    },
+
+    {
+      "rank": 7,
+      "region_code": "GRUDZIADZ",
+      "city_name": "Grudziądz",
+      "population": 92681,
+      "primary_value": 0.130,
+      "metrics": {
+        "srednia": 0.130,
+        "mediana": 0.0,
+        "std": 0.345,
+        "liczba_tras": 353
+      }
+    },
+    {
+      "rank": 8,
+      "region_code": "PILA",
+      "city_name": "Piła",
+      "population": 73497,
+      "primary_value": 0.132,
+      "metrics": {
+        "srednia": 0.132,
+        "mediana": 0.0,
+        "std": 0.393,
+        "liczba_tras": 152
+      }
+    },
+    {
+      "rank": 9,
+      "region_code": "NOWY_SACZ",
+      "city_name": "Nowy Sącz",
+      "population": 83116,
+      "primary_value": 0.135,
+      "metrics": {
+        "srednia": 0.135,
+        "mediana": 0.0,
+        "std": 0.352,
+        "liczba_tras": 565
+      }
+    },
+    {
+      "rank": 10,
+      "region_code": "SLUPSK",
+      "city_name": "Słupsk",
+      "population": 90747,
+      "primary_value": 0.141,
+      "metrics": {
+        "srednia": 0.141,
+        "mediana": 0.0,
+        "std": 0.358,
+        "liczba_tras": 581
+      }
+    },
+    {
+      "rank": 11,
+      "region_code": "ELBLAG",
+      "city_name": "Elbląg",
+      "population": 119317,
+      "primary_value": 0.145,
+      "metrics": {
+        "srednia": 0.145,
+        "mediana": 0.0,
+        "std": 0.355,
+        "liczba_tras": 69
+      }
+    },
+    {
+      "rank": 12,
+      "region_code": "TARNOW",
+      "city_name": "Tarnów",
+      "population": 107927,
+      "primary_value": 0.147,
+      "metrics": {
+        "srednia": 0.147,
+        "mediana": 0.0,
+        "std": 0.355,
+        "liczba_tras": 231
+      }
+    },
+    {
+      "rank": 13,
+      "region_code": "OPOLE",
+      "city_name": "Opole",
+      "population": 127387,
+      "primary_value": 0.150,
+      "metrics": {
+        "srednia": 0.150,
+        "mediana": 0.0,
+        "std": 0.379,
+        "liczba_tras": 986
+      }
+    },
+    {
+      "rank": 14,
+      "region_code": "GORZOW",
+      "city_name": "Gorzów Wielkopolski",
+      "population": 123762,
+      "primary_value": 0.159,
+      "metrics": {
+        "srednia": 0.159,
+        "mediana": 0.0,
+        "std": 0.376,
+        "liczba_tras": 1516
+      }
+    },
+    {
+      "rank": 15,
+      "region_code": "JELENIA_GORA",
+      "city_name": "Jelenia Góra",
+      "population": 78335,
+      "primary_value": 0.160,
+      "metrics": {
+        "srednia": 0.160,
+        "mediana": 0.0,
+        "std": 0.388,
+        "liczba_tras": 1210
+      }
+    },
+    {
+      "rank": 16,
+      "region_code": "OSTROW",
+      "city_name": "Ostrów Wielkopolski",
+      "population": 71130,
+      "primary_value": 0.184,
+      "metrics": {
+        "srednia": 0.184,
+        "mediana": 0.0,
+        "std": 0.415,
+        "liczba_tras": 98
+      }
+    },
+    {
+      "rank": 17,
+      "region_code": "ZIELONA_GORA",
+      "city_name": "Zielona Góra",
+      "population": 140892,
+      "primary_value": 0.199,
+      "metrics": {
+        "srednia": 0.199,
+        "mediana": 0.0,
+        "std": 0.412,
+        "liczba_tras": 3316
+      }
+    },
+    {
+      "rank": 18,
+      "region_code": "OLSZTYN",
+      "city_name": "Olsztyn",
+      "population": 171249,
+      "primary_value": 0.226,
+      "metrics": {
+        "srednia": 0.226,
+        "mediana": 0.0,
+        "std": 0.436,
+        "liczba_tras": 3082
+      }
+    },
+    {
+      "rank": 19,
+      "region_code": "RADOM",
+      "city_name": "Radom",
+      "population": 210863,
+      "primary_value": 0.229,
+      "metrics": {
+        "srednia": 0.229,
+        "mediana": 0.0,
+        "std": 0.442,
+        "liczba_tras": 1299
+      }
+    },
+    {
+      "rank": 20,
+      "region_code": "RYBNIK",
+      "city_name": "Rybnik",
+      "population": 137128,
+      "primary_value": 0.235,
+      "metrics": {
+        "srednia": 0.235,
+        "mediana": 0.0,
+        "std": 0.451,
+        "liczba_tras": 520
+      }
+    },
+    {
+      "rank": 21,
+      "region_code": "CZESTOCHOWA",
+      "city_name": "Częstochowa",
+      "population": 217530,
+      "primary_value": 0.238,
+      "metrics": {
+        "srednia": 0.238,
+        "mediana": 0.0,
+        "std": 0.439,
+        "liczba_tras": 1128
+      }
+    },
+    {
+      "rank": 22,
+      "region_code": "TORUN",
+      "city_name": "Toruń",
+      "population": 201447,
+      "primary_value": 0.250,
+      "metrics": {
+        "srednia": 0.250,
+        "mediana": 0.0,
+        "std": 0.467,
+        "liczba_tras": 4890
+      }
+    },
+    {
+      "rank": 23,
+      "region_code": "RZESZOW",
+      "city_name": "Rzeszów",
+      "population": 196821,
+      "primary_value": 0.263,
+      "metrics": {
+        "srednia": 0.263,
+        "mediana": 0.0,
+        "std": 0.460,
+        "liczba_tras": 3014
+      }
+    },
+    {
+      "rank": 24,
+      "region_code": "LUBLIN",
+      "city_name": "Lublin",
+      "population": 338586,
+      "primary_value": 0.278,
+      "metrics": {
+        "srednia": 0.278,
+        "mediana": 0.0,
+        "std": 0.481,
+        "liczba_tras": 9510
+      }
+    },
+    {
+      "rank": 25,
+      "region_code": "KIELCE",
+      "city_name": "Kielce",
+      "population": 196844,
+      "primary_value": 0.290,
+      "metrics": {
+        "srednia": 0.290,
+        "mediana": 0.0,
+        "std": 0.484,
+        "liczba_tras": 1943
+      }
+    },
+    {
+      "rank": 26,
+      "region_code": "BIALYSTOK",
+      "city_name": "Białystok",
+      "population": 297554,
+      "primary_value": 0.328,
+      "metrics": {
+        "srednia": 0.328,
+        "mediana": 0.0,
+        "std": 0.509,
+        "liczba_tras": 2834
+      }
+    },
+    {
+      "rank": 27,
+      "region_code": "BYDGOSZCZ",
+      "city_name": "Bydgoszcz",
+      "population": 342688,
+      "primary_value": 0.336,
+      "metrics": {
+        "srednia": 0.336,
+        "mediana": 0.0,
+        "std": 0.546,
+        "liczba_tras": 8682
+      }
+    },
+    {
+      "rank": 28,
+      "region_code": "TROJMIASTO",
+      "city_name": "Trójmiasto",
+      "population": 748348,
+      "primary_value": 0.346,
+      "metrics": {
+        "srednia": 0.346,
+        "mediana": 0.0,
+        "std": 0.580,
+        "liczba_tras": 24371
+      }
+    },
+    {
+      "rank": 29,
+      "region_code": "WROCLAW",
+      "city_name": "Wrocław",
+      "population": 672929,
+      "primary_value": 0.355,
+      "metrics": {
+        "srednia": 0.355,
+        "mediana": 0.0,
+        "std": 0.560,
+        "liczba_tras": 45710
+      }
+    },
+    {
+      "rank": 30,
+      "region_code": "GOP",
+      "city_name": "Górnośląski Okręg Przemysłowy",
+      "population": 2800000,
+      "primary_value": 0.366,
+      "metrics": {
+        "srednia": 0.366,
+        "mediana": 0.0,
+        "std": 0.604,
+        "liczba_tras": 16228
+      }
+    },
+    {
+      "rank": 31,
+      "region_code": "POZNAN",
+      "city_name": "Poznań",
+      "population": 546859,
+      "primary_value": 0.412,
+      "metrics": {
+        "srednia": 0.412,
+        "mediana": 0.0,
+        "std": 0.630,
+        "liczba_tras": 34953
+      }
+    },
+    {
+      "rank": 32,
+      "region_code": "KRAKOW",
+      "city_name": "Kraków",
+      "population": 779966,
+      "primary_value": 0.414,
+      "metrics": {
+        "srednia": 0.414,
+        "mediana": 0.0,
+        "std": 0.614,
+        "liczba_tras": 48492
+      }
+    },
+    {
+      "rank": 33,
+      "region_code": "LODZ",
+      "city_name": "Łódź",
+      "population": 679941,
+      "primary_value": 0.435,
+      "metrics": {
+        "srednia": 0.435,
+        "mediana": 0.0,
+        "std": 0.620,
+        "liczba_tras": 7053
+      }
+    },
+    {
+      "rank": 34,
+      "region_code": "SZCZECIN",
+      "city_name": "Szczecin",
+      "population": 399515,
+      "primary_value": 0.466,
+      "metrics": {
+        "srednia": 0.466,
+        "mediana": 0.0,
+        "std": 0.649,
+        "liczba_tras": 6429
+      }
+    },
+    {
+      "rank": 35,
+      "region_code": "WARSZAWA",
+      "city_name": "Warszawa",
+      "population": 1790658,
+      "primary_value": 0.534,
+      "metrics": {
+        "srednia": 0.534,
+        "mediana": 0.0,
+        "std": 0.698,
+        "liczba_tras": 71033
+      }
+    }
+  ],
+  "summary": {
+    "total_cities": 35,
+    "best_performer": {
+      "city_name": "Inowrocław",
+      "value": 0.060
+    },
+    "worst_performer": {
+      "city_name": "Warszawa",
+      "value": 0.534
+    },
+    "top_5_avg": 0.095,
+    "large_cities_avg": 0.415,
+    "quartiles": {
+      "q1": 0.145,
+      "q2": 0.229,
+      "q3": 0.346
+    }
+  },
+  "chart_data": {
+    "bar_chart": {
+      "x_axis": "city_name",
+      "y_axis": "primary_value",
+      "title": "Średnia liczba przesiadek w miastach Polski"
+    },
+    "scatter_plot": {
+      "x_axis": "population",
+      "y_axis": "primary_value",
+      "title": "Liczba przesiadek vs wielkość miasta"
+    }
+  }
+}
